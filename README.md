@@ -124,6 +124,10 @@ isort .
 
 ## Usage Local
 
+* Create a poetry env with python 3.10
+```shell
+poetry env use 3.10
+```
 * Install dependencies in poetry env (virtualenv) `make deps`
 * Lint & Test `make build`
 * Lint,Test & Run `make run`
