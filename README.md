@@ -54,6 +54,10 @@ All you need is the following configuration already installed:
 * `PYSPARK_DRIVER_PYTHON` environment variable configured with `"python3.10"`
 * Install Make to run `Makefile` file
 * Why `Python 3.10` because `PySpark 3.3.1` doesn't work with `Python 3.11` at the moment it seems (I haven't tried with Python 3.12)
+* Install python 3.10 with pyenv on homebrew/linuxbrew
+```shell
+CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl)" pyenv install 3.10
+```
 
 ### Add format, lint code tools
 
