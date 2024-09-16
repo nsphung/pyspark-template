@@ -172,32 +172,6 @@
         ]
     },
     {
-        "atccode": "A03BA",
-        "drug": "ATROPINE",
-        "pubmeds": [
-            {}
-        ],
-        "clinical_trials": [
-            {}
-        ],
-        "journals": [
-            {}
-        ]
-    },
-    {
-        "atccode": "6302001",
-        "drug": "ISOPRENALINE",
-        "pubmeds": [
-            {}
-        ],
-        "clinical_trials": [
-            {}
-        ],
-        "journals": [
-            {}
-        ]
-    },
-    {
         "atccode": "R01AD",
         "drug": "BETAMETHASONE",
         "pubmeds": [
@@ -222,6 +196,32 @@
     {
         "atccode": "HELLO",
         "drug": "CORONA",
+        "pubmeds": [
+            {}
+        ],
+        "clinical_trials": [
+            {}
+        ],
+        "journals": [
+            {}
+        ]
+    },
+    {
+        "atccode": "A03BA",
+        "drug": "ATROPINE",
+        "pubmeds": [
+            {}
+        ],
+        "clinical_trials": [
+            {}
+        ],
+        "journals": [
+            {}
+        ]
+    },
+    {
+        "atccode": "6302001",
+        "drug": "ISOPRENALINE",
         "pubmeds": [
             {}
         ],

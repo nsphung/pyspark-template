@@ -172,8 +172,8 @@
         ]
     },
     {
-        "atccode": "A03BA",
-        "drug": "ATROPINE",
+        "atccode": "6302001",
+        "drug": "ISOPRENALINE",
         "pubmeds": [
             {}
         ],
@@ -185,8 +185,8 @@
         ]
     },
     {
-        "atccode": "6302001",
-        "drug": "ISOPRENALINE",
+        "atccode": "A03BA",
+        "drug": "ATROPINE",
         "pubmeds": [
             {}
         ],

@@ -16,6 +16,7 @@ People has asked me several times how to setup a good/clean/code organization fo
   - [Inspiration](#inspiration)
   - [Development](#development)
     - [Prerequisites](#prerequisites)
+    - [Pyenv Manual Install \[Optional\]](#pyenv-manual-install-optional)
     - [Add format, lint code tools](#add-format-lint-code-tools)
       - [Autolint/Format code with Black in IDE:](#autolintformat-code-with-black-in-ide)
       - [Checked optional type with Mypy PEP 484](#checked-optional-type-with-mypy-pep-484)
@@ -40,20 +41,24 @@ People has asked me several times how to setup a good/clean/code organization fo
 All you need is the following configuration already installed:
 
 * [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* The project was tested with **Python 3.10.9** managed by pyenv:
-  * [pyenv prerequisites for ubuntu](https://github.com/pyenv/pyenv/wiki#suggested-build-environment). Check the prerequisites for your OS.
+* The project was tested with **Python 3.10.13** managed by [pyenv](https://github.com/pyenv):
+  * Use `make pyenv` goal to launch the automated install of pyenv
+* `JAVA_HOME` environment variable configured with a Java `JDK11`
+* `SPARK_HOME` environment variable configured with Spark version `spark-3.5.2-bin-hadoop3` package
+* `PYSPARK_PYTHON` environment variable configured with `"python3.10"`
+* `PYSPARK_DRIVER_PYTHON` environment variable configured with `"python3.10"`
+* Install Make to run `Makefile` file
+* Why `Python 3.10` because `PySpark 3.5.2` doesn't work with `Python 3.11` at the moment it seems (I haven't tried with Python 3.12)
+
+### Pyenv Manual Install [Optional]
+
+* [pyenv prerequisites for ubuntu](https://github.com/pyenv/pyenv/wiki#suggested-build-environment). Check the prerequisites for your OS.
   ```
   sudo apt-get update; sudo apt-get install make build-essential libssl-dev zlib1g-dev \
   libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
   libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
   ```
-  * `pyenv` installed and available in path [pyenv installation](https://github.com/pyenv/pyenv#installation) with Prerequisites 
-* `JAVA_HOME` environment variable configured with a Java `JDK11`
-* `SPARK_HOME` environment variable configured with Spark version `spark-3.3.1-bin-hadoop3` package
-* `PYSPARK_PYTHON` environment variable configured with `"python3.10"`
-* `PYSPARK_DRIVER_PYTHON` environment variable configured with `"python3.10"`
-* Install Make to run `Makefile` file
-* Why `Python 3.10` because `PySpark 3.3.1` doesn't work with `Python 3.11` at the moment it seems (I haven't tried with Python 3.12)
+* `pyenv` installed and available in path [pyenv installation](https://github.com/pyenv/pyenv#installation) with Prerequisites
 * Install python 3.10 with pyenv on homebrew/linuxbrew
 ```shell
 CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl)" pyenv install 3.10
@@ -128,6 +133,7 @@ isort .
 ```shell
 poetry env use 3.10
 ```
+* Install [pyenv](https://github.com/pyenv) `make pyenv`
 * Install dependencies in poetry env (virtualenv) `make deps`
 * Lint & Test `make build`
 * Lint,Test & Run `make run`
@@ -152,4 +158,4 @@ Options:
 
 ## Usage in distributed-mode depending on your cluster manager type
 
-* Use `spark-submit` with the Python Wheel file build by `make-dist` in the `dist` folder.
+* Use `spark-submit` with the Python Wheel file built by `make dist` command in the `dist` folder.
