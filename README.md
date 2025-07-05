@@ -41,14 +41,14 @@ People has asked me several times how to setup a good/clean/code organization fo
 All you need is the following configuration already installed:
 
 * [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* The project was tested with **Python 3.10.13** managed by [pyenv](https://github.com/pyenv):
+* The project was tested with **Python 3.10.18** managed by [pyenv](https://github.com/pyenv):
   * Use `make pyenv` goal to launch the automated install of pyenv
 * `JAVA_HOME` environment variable configured with a Java `JDK11`
-* `SPARK_HOME` environment variable configured with Spark version `spark-3.5.2-bin-hadoop3` package
+* `SPARK_HOME` environment variable configured with Spark version `spark-3.5.6-bin-hadoop3` package
 * `PYSPARK_PYTHON` environment variable configured with `"python3.10"`
 * `PYSPARK_DRIVER_PYTHON` environment variable configured with `"python3.10"`
 * Install Make to run `Makefile` file
-* Why `Python 3.10` because `PySpark 3.5.2` doesn't work with `Python 3.11` at the moment it seems (I haven't tried with Python 3.12)
+* Why `Python 3.10` because `PySpark 3.5.6` doesn't work with `Python 3.11` at the moment it seems (I haven't tried with Python 3.12)
 
 ### Pyenv Manual Install [Optional]
 
