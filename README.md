@@ -12,7 +12,7 @@ People has asked me several times how to setup a good/clean/code organization fo
 
 # Deepwiki Documentation
 
-Deepwiki: https://deepwiki.com/nsphung/pyspark-template/11-api-reference
+Deepwiki: https://deepwiki.com/nsphung/pyspark-template
 
 **Table of Contents**
 - [PySpark Template Project](#pyspark-template-project)
