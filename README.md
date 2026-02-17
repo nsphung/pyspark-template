@@ -5,12 +5,13 @@
 [![python-3.10](https://img.shields.io/badge/Python-%203.10%20-blue)](https://www.python.org/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
-[![Checked with mypy](https://camo.githubusercontent.com/34b3a249cd6502d0a521ab2f42c8830b7cfd03fa/687474703a2f2f7777772e6d7970792d6c616e672e6f72672f7374617469632f6d7970795f62616467652e737667)](http://mypy-lang.org/)
+[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue)](http://mypy-lang.org/)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/nsphung/pyspark-template)
 
 People has asked me several times how to setup a good/clean/code organization for Python project with PySpark. I didn't find a fully feature project, so this is my attempt for one. Moreover, have a simple integration with Jupyter Notebook inside the project too.
 
-# Deepwiki Documentation
+# Deepwiki Documentation [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/nsphung/pyspark-template)
 
 Deepwiki: https://deepwiki.com/nsphung/pyspark-template
 
@@ -84,7 +85,7 @@ CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl)" pyenv install 3.10
 
 #### Checked optional type with Mypy [PEP 484](https://www.python.org/dev/peps/pep-0484/)
 
-[![Checked with mypy](https://camo.githubusercontent.com/34b3a249cd6502d0a521ab2f42c8830b7cfd03fa/687474703a2f2f7777772e6d7970792d6c616e672e6f72672f7374617469632f6d7970795f62616467652e737667)](http://mypy-lang.org/)
+[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue)](http://mypy-lang.org/)
 
 Configure Mypy to help annotating/hinting type with Python Code. It's very useful for IDE and for catching errors/bugs early. 
 
